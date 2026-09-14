@@ -1,5 +1,8 @@
 let containerEl = document.getElementById("mainContainer");
-
+let headingEl = document.createElement("h1");
+headingEl.classList.add("heading");
+headingEl.textContent = "Login Form";
+containerEl.appendChild(headingEl);
 
 let labelEl = document.createElement("label");
 labelEl.setAttribute("for","username");
