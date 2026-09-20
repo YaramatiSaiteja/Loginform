@@ -17,7 +17,13 @@ usernameInput.addEventListener("blur",function(event){
     }
 });
 
+usernameInput.addEventListener("change",function(event){
+    formData.username = event.target.value;
+});
 
+passwordInput.addEventListener("change",function(event){
+    formData.password = event.target.value;
+});
 
 passwordInput.addEventListener("blur",function(event){
     if(event.target.value === ""){
