@@ -4,13 +4,10 @@ let passwordInput = document.getElementById("password");
 let usernameError = document.getElementById("usernameError");
 let passwordError = document.getElementById("passwordError");
 
-loginForm.addEventListener("submit",function(event){
-    event.preventDefault();
-    let username = usernameInput.value;
-    let password = passwordInput.value;
-    console.log("Username:", username);
-    console.log("Password:", password);
-});
+let formData = {
+    username: "",
+    password: ""
+}
 
 usernameInput.addEventListener("blur",function(event){
     if(event.target.value === ""){
@@ -20,10 +17,16 @@ usernameInput.addEventListener("blur",function(event){
     }
 });
 
+
+
 passwordInput.addEventListener("blur",function(event){
     if(event.target.value === ""){
         passwordError.textContent = "Password is required.";    
     } else {
         passwordError.textContent = "";
     }
+});
+
+loginForm.addEventListener("submit",function(event){
+    event.preventDefault();
 });
