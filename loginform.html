@@ -11,16 +11,19 @@
             <title>Project 2</title>
         </head>
         <body>
-            <div id="mainContainer" class="maincontainer d-flex flex-column align-items-center justify-content-center">
+            <div id="mainContainer" class="maincontainer d-flex flex-column align-items-center">
                 <h1 class="text-center">Login</h1>
-                <form id="loginForm">
-                    <label for="username">Username</label>
-                    <input type="text" id="username"/>
-                    <p id="usernameError" class="text-danger"></p>
-                    <label for="password">Password</label>
-                    <input type="password" id="password"/>
-                    <p id="passwordError" class="text-danger"></p>
-                </form>
+                <div class="card">
+                    <form id="loginForm">
+                        <label for="username">Username</label><br>
+                        <input type="text" id="username"/><br>
+                        <p id="usernameError" class="text-danger"></p>
+                        <label for="password">Password</label><br>
+                        <input type="password" id="password"/><br><br>
+                        <p id="passwordError" class="text-danger"></p>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
             </div>
             <script src="loginform.js"></script>
         </body>
